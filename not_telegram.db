@@ -1,0 +1,16 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "Users" (
+	"id"	INTEGER,
+	"username"	TEXT NOT NULL,
+	"email"	TEXT NOT NULL,
+	"age"	INTEGER,
+	"balance"	INTEGER NOT NULL,
+	PRIMARY KEY("id")
+);
+INSERT INTO "Users" VALUES (2,'User2','example2@gmail.com',20,1000);
+INSERT INTO "Users" VALUES (3,'User3','example3@gmail.com',30,500);
+INSERT INTO "Users" VALUES (5,'User5','example5@gmail.com',50,500);
+INSERT INTO "Users" VALUES (6,'User6','example6@gmail.com',60,1000);
+INSERT INTO "Users" VALUES (8,'User8','example8@gmail.com',80,1000);
+INSERT INTO "Users" VALUES (9,'User9','example9@gmail.com',90,500);
+COMMIT;
